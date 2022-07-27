@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <div class="logo"><span>Ravi Dhiver</span></div>
+
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+            </ul>    
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+        <!-- 
+            <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+        </div>
+    -->
+
+      </nav>
+
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+      <section class="h-text">
+        <div class="h11">
+          <h1 style="font-family: 'Dancing Script', cursive" fade-down>
+            Design is not just what it looks like and feels like. Design is how
+            it works.
+          </h1>
+        </div>
+      </section>
+    </header>
+
+    <section class="filter_gallery">
+      <div class="portfolio-menu">
+        <ul>
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".UI">UI</li>
+          <li data-filter=".UX">UX</li>
+          <li data-filter=".Prototype">Prototype</li>
+        </ul>
+      </div>
+      <div class="portfolio-item">
+        <div class="item UI" data-aos="flip-left">
+          <a href="img/UI/UI_01.jpg"><img src="img/UI/UI_01-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_01.jpg"><img src="img/UX/UX_01-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_02.jpg"><img src="img/UI/UI_02-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_02.jpg"><img src="img/UX/UX_02-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_03.jpg"><img src="img/UI/UI_03-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_03.jpg"><img src="img/UX/UX_03-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_04.jpg"><img src="img/UI/UI_04-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_04.jpg"><img src="img/UX/UX_04-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_05.jpg"><img src="img/UI/UI_05-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_05.jpg"><img src="img/UX/UX_05-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_06.jpg"><img src="img/UI/UI_06-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_06.jpg"><img src="img/UX/UX_06-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_07.jpg"><img src="img/UI/UI_07-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UX">
+          <a href="img/UX/UX_07.jpg"><img src="img/UX/UX_07-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_08.jpg"><img src="img/UI/UI_08-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item Prototype">
+          <a href="#"><img src="#" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_09.jpg"><img src="img/UI/UI_09-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+        <div class="item UI">
+          <a href="img/UI/UI_10.jpg"><img src="img/UI/UI_10-small.jpg" alt="" width="100" height="100"/></a>
+        </div>
+
+      </div>
+    </section>
+    <section class="member">
+      <div
+        class="member-info"
+        data-aos="zoom-in-up"
+        data-aos-offset="100"
+        data-aos-delay="100"
+      >
+        <h1>Our <span>Informations</span></h1>
+      </div>
+      <div
+        class="member-card"
+        data-aos="zoom-in-down"
+        data-aos-offset="200"
+        data-aos-delay="200"
+      >
+        <img class="profile" src="img/pro.png" alt="" />
+        <p>UI/UX Designer</p>
+        <p>rvdhiver@gmail.com</p>
+        <h2>* Ravi Dhiver</h2>
+        <a href="https://www.instagram.com/mr_rv18/"
+          ><img src="img/insta.png" alt="" width="20"
+        /></a>
+        <a href="https://www.linkedin.com/in/ravi-dhiver-77748018a/"
+          ><img src="img/linkdin.png" alt="" width="20"
+        /></a>
+        <a href="https://github.com/rvdhiver"
+          ><img src="img/github.png" alt="" width="20"
+        /></a>
+        <a href="mailto:rvdhiver@gmail.com"
+          ><img src="img/mail.png" alt="" width="20"
+        /></a>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>
+        Copyright © 2022 @Ravi Dhiver
+        <span class="foot">Contact: rvdhiver@gmail.com</span>
+      </p>
+      <!--
+    <a class="color:white" href="#"><i class="fa-brands fa-github " width="30"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram "></i></a>
+    <a href="#"><i class="fa-brands fa-linkedin "></i></a>  
+    <a href="#"><i class="fa-regular fa-envelope "></i></a>  
+
+    -->
+
+      <a href="https://www.instagram.com/mr_rv18/"
+        ><img src="img/insta.png" alt="" width="20"
+      /></a>
+      <a href="https://www.linkedin.com/in/ravi-dhiver-77748018a/"
+        ><img src="img/linkdin.png" alt="" width="20"
+      /></a>
+      <a href="https://github.com/rvdhiver"
+        ><img src="img/github.png" alt="" width="20"
+      /></a>
+      <a href="mailto:rvdhiver@gmail.com"
+        ><img src="img/mail.png" alt="" width="20"
+      /></a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/be9ceba72b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      $(".portfolio-item").isotope({
+        // options
+        itemSelector: ".item",
+        layoutMode: "fitRows",
+      });
+      $(".portfolio-menu ul li").click(function () {
+        $(".portfolio-menu ul li").removeClass("active");
+        $(this).addClass("active");
+
+        var selector = $(this).attr("data-filter");
+        $(".portfolio-item").isotope({
+          filter: selector,
+        });
+        return false;
+      });
+    </script>
+  </body>
+</html>
